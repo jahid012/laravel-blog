@@ -1,0 +1,36 @@
+{
+    "name": "ducorteam/portfolio",
+    "description": "simple portfolio",
+    "keywords": [
+        "ducorteam",
+        "Plugin",
+        "portfolio"
+    ],
+    "homepage": "https://github.com/ducorteam/portfolio",
+    "license": "The Unlicense",
+    "version": "0.0.1",
+    "type": "plugin",
+    "authors": [
+        {
+            "name": "Ducor Team",
+            "email": "ducorteam@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Plugins\\Portfolio\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Plugins\\Portfolio\\Providers\\PortfolioServiceProvider",
+                "Plugins\\Portfolio\\Providers\\RouteServiceProvider"
+            ]
+        }
+    }
+}

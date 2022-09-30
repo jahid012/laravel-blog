@@ -1,0 +1,38 @@
+{
+    "name": "ducorteam/{{$name}}",
+    "description": "description of {{$name}}",
+    "keywords": [
+        "ducorteam",
+        "Plugin",
+        "{{$name}}"
+    ],
+    "homepage": "https://github.com/ducorteam/{{$name}}",
+    "license": "The Unlicense",
+    "version": "0.0.1",
+    "type": "plugin",
+    "authors": [
+        {
+            "name": "Ducor Team",
+            "email": "ducorteam@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Plugins\\{{$ucname}}\\": "src/",
+            "Plugins\\{{$ucname}}\\Database\\Factories\\": "database/factories/",
+            "Plugins\\{{$ucname}}\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Plugins\\{{$ucname}}\\{{$ucname}}ServiceProvider",
+                "Plugins\\{{$ucname}}\\RouteServiceProvider",
+            ]
+        }
+    }
+}

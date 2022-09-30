@@ -1,0 +1,38 @@
+{
+    "name": "ducorteam/contact",
+    "description": "simple contact",
+    "keywords": [
+        "ducorteam",
+        "Plugin",
+        "contact"
+    ],
+    "homepage": "https://github.com/ducorteam/contact",
+    "license": "The Unlicense",
+    "version": "0.0.1",
+    "type": "plugin",
+    "authors": [
+        {
+            "name": "Ducor Team",
+            "email": "ducorteam@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Plugins\\Contact\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Plugins\\Contact\\Providers\\ContactServiceProvider",
+                "Plugins\\Contact\\Providers\\RouteServiceProvider"
+            ]
+        }
+    }
+}

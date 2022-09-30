@@ -1,0 +1,39 @@
+.bootstrap-select{
+    margin-bottom: 0;
+
+   .btn {
+		border: 1px solid $l-border !important;
+		background-color: $light !important;
+		padding: 0.375rem 1rem;
+        
+		
+		@at-root [data-theme-version="dark"] & {
+			background: $d-bg  !important;
+			border: 1px solid $d-border !important;
+			color: $white!important;
+		}
+       
+       &:active,
+       &:focus,
+       &:hover {
+			outline: none !important;
+			outline-offset: 0;
+			@at-root [data-theme-version="dark"] & {
+				color: $white!important;
+			}
+       }
+   }
+    .dropdown-menu{
+		border-color: $l-border !important;
+		box-shadow:$shadow;
+		
+		.dropdown-item{
+			padding: 0.25rem 1rem;
+		}
+		
+		@at-root [data-theme-version="dark"] & {
+			border-color: $d-border !important;
+		}
+	}
+   
+}

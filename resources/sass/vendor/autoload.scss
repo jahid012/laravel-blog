@@ -1,0 +1,27 @@
+
+@import "./dropzone-5.9.3/src/dropzone.scss";
+
+@import "./summernote/src/styles/lite/summernote-lite.scss";
+
+// fixed bootstrap toggle issues
+.note-editor{
+    .dropdown-toggle{
+        &::after{
+            display: none;
+        }
+        &::before{
+            display: none;
+        }
+    }
+
+    .note-color-all{
+        &.open{
+            .note-dropdown-menu{
+                display: inline-flex;
+            }
+        }
+    }
+
+
+}
+

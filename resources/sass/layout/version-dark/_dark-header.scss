@@ -1,0 +1,50 @@
+[data-theme-version="dark"] {
+    
+    .header {
+        background-color: $d-bg;
+    }
+
+    .header-left {
+        input {
+            background: $dark-card !important;
+            border-color: transparent ;
+            color: $white !important;
+
+            &:focus {
+                box-shadow: none;
+                border-color: $primary;
+            }
+
+            &::placeholder {
+                color: $white;
+            }
+        }
+		.search_icon{
+		    background: $dark-card !important;
+			
+			i{
+				color: $white;
+			}
+		}
+    }
+
+    .header-right {
+        .dropdown {
+            .nav-link {
+				color: $white;
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+
+        .notification_dropdown {
+            .dropdown-item {
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+}

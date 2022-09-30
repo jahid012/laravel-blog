@@ -1,0 +1,149 @@
+<div class="d-flex align-items-start">
+    <div class="nav flex-column nav-pills my-2 w-25" style="margin-right: 1rem" id="theme-o-tab-tab" role="tablist"
+        aria-orientation="vertical">
+        <button class="nav-link active text-start" data-bs-toggle="pill" data-bs-target="#theme-o-tab-general"
+            type="button" role="tab" aria-controls="theme-o-tab-general" aria-selected="true">
+            <i class="fas fa-home"></i> {{ __(' General') }}
+        </button>
+        <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#theme-o-tab-logo" type="button"
+            role="tab" aria-controls="theme-o-tab-logo" aria-selected="false">
+            <i class="far fa-images"></i> {{ __(' Logo') }}
+        </button>
+        <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#theme-o-tab-social" type="button"
+            role="tab" aria-controls="theme-o-tab-social" aria-selected="false">
+            <i class="fas fa-share-square"></i> {{ __(' Social') }}
+        </button>
+        <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#theme-o-tab-page" type="button"
+            role="tab" aria-controls="theme-o-tab-page" aria-selected="false">
+            <i class="fas fa-file"></i> {{ __(' Page') }}
+        </button>
+    </div>
+
+    <div class="tab-content bg-white w-100 min-vh-100 my-2 py-3 px-4">
+        <div class="tab-pane fade show active" id="theme-o-tab-general" role="tabpanel"
+            aria-labelledby="theme-o-tab-general-tab">
+
+            <div class="mb-3">
+                <label class="form-label">{{ __('Site title ') }}</label>
+                <input name="site_title" value="{{__o('site_title')}}" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{!! __("Show site name after page title, separate with '-'?") !!}</label>
+                <select value="{{__o('title_separate')}}" name="title_separate" class="form-control">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{{ __('Site description') }}</label>
+                <textarea name="site_description" class="form-control" rows="3">{{__o('site_description')}}</textarea>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{{ __('SEO title ') }}</label>
+                <input value="{{__o('seo_title')}}" name="seo_title" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{{ __('SEO description') }}</label>
+                <textarea name="seo_description" class="form-control" rows="3">{{__o('seo_description')}}</textarea>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <div class="form-label">{{ __('SEO default Open Graph image ') }}</div>
+                        <input value="{{__o('seo_ogimage')}}" name="seo_ogimage" type="file" class="form-control" />
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="{{__o('seo_ogimage')}}" class="img-fluid" alt="" />
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{{ __('Address') }}</label>
+                <input value="{{__o('site_address')}}" name="site_address" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{{ __('Email') }}</label>
+                <input value="{{__o('site_email')}}" name="site_email" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{{ __('Copyright') }}</label>
+                <input value="{{__o('site_copyright')}}" name="site_copyright" class="form-control" />
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="theme-o-tab-logo" role="tabpanel" aria-labelledby="theme-o-tab-logo-tab">
+
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <div class="form-label">{{ __('Logo') }}</div>
+                        <input value="{{__o('site_logo')}}" name="site_logo" type="file" class="form-control" />
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="{{__o('site_logo')}}" class="img-fluid" alt="" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <div class="form-label">{{ __('Favicon') }}</div>
+                        <input value="{{__o('site_favicon')}}" name="site_favicon" type="file" class="form-control" />
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="{{__o('site_favicon')}}" class="img-fluid" alt="" />
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="theme-o-tab-social" role="tabpanel" aria-labelledby="theme-o-tab-social-tab">
+
+            <div class="mb-3">
+                <label class="form-label">{{ __('Facebook') }}</label>
+                <input value="{{__o('social_facebook')}}" name="social_facebook" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{{ __('Twitter') }}</label>
+                <input value="{{__o('social_twitter')}}" name="social_twitter" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{{ __('Youtube') }}</label>
+                <input value="{{__o('social_youtube')}}" name="social_youtube" class="form-control" />
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="theme-o-tab-page" role="tabpanel" aria-labelledby="theme-o-tab-page-tab">
+
+            <div class="mb-3">
+                <label class="form-label">{{ __('Home page Setting') }}</label>
+                <select value="{{__o('page_home')}}" name="page_home"  class="form-control" >
+                    @foreach ($pages as $page)
+                    <option>{{$page}}</option>
+                    @endforeach
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{{ __('Blog page Setting') }}</label>
+                <select value="{{__o('page_blog')}}" name="page_blog"  class="form-control">
+                    @foreach ($pages as $page)
+                    <option>{{$page}}</option>
+                    @endforeach
+                </select>
+            </div>
+
+        </div>
+    </div>
+</div>

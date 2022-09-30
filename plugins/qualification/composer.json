@@ -1,0 +1,36 @@
+{
+    "name": "ducorteam/qualification",
+    "description": "simple qualification",
+    "keywords": [
+        "ducorteam",
+        "Plugin",
+        "qualification"
+    ],
+    "homepage": "https://github.com/ducorteam/qualification",
+    "license": "The Unlicense",
+    "version": "0.0.1",
+    "type": "plugin",
+    "authors": [
+        {
+            "name": "Ducor Team",
+            "email": "ducorteam@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Plugins\\Qualification\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Plugins\\Qualification\\Providers\\QualificationServiceProvider",
+                "Plugins\\Qualification\\Providers\\RouteServiceProvider"
+            ]
+        }
+    }
+}

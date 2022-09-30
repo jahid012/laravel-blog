@@ -1,0 +1,52 @@
+#theme_list{
+    .th-screenshot i{
+        font-size: 15rem;
+    }
+}
+
+[data-sidebar-style="full"]{
+    #theme_list{
+        .th-screenshot i{
+            font-size: 10rem;
+        }
+    }
+}
+
+ @include media-breakpoint-up(sm) {
+    #theme_list{
+        .th-screenshot i{
+            font-size: 18rem;
+        }
+    }
+
+    [data-sidebar-style="full"]{
+        #theme_list{
+            .th-screenshot i{
+                font-size: 18rem;
+            }
+        }
+    }
+
+ }
+@include media-breakpoint-up(md) {
+    #theme_list{
+        .th-screenshot i{
+            font-size: 25rem;
+        }
+    }
+    [data-sidebar-style="full"]{
+        #theme_list{
+            .th-screenshot i{
+                font-size: 25rem;
+            }
+        }
+    }
+ }
+
+
+/**
+Theme options
+**/
+#theme-o-tab{
+    margin-right: 1rem;
+}

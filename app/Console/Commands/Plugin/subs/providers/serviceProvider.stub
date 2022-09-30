@@ -1,0 +1,30 @@
+<?php
+
+namespace Plugins\{{$ucname}}\Providers;
+
+use Illuminate\Support\ServiceProvider;
+
+class {{$ucname}}ServiceProvider extends ServiceProvider
+{
+    /**
+     * Bootstrap the application services.
+     */
+    public function boot()
+    {
+        /*
+         * Optional methods to load your package assets
+         */
+        $this->loadTranslationsFrom(__DIR__.'/../../resources/lang', '{{$name}}');
+        $this->loadViewsFrom(__DIR__.'/../../resources/views', '{{$name}}');
+        $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
+
+    }
+
+    /**
+     * Register the application services.
+     */
+    public function register()
+    {
+
+    }
+}

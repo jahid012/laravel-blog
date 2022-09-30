@@ -1,0 +1,34 @@
+{
+    "name": "ducorteam/blog",
+    "description": "simple blog plugin",
+    "keywords": [
+        "ducorteam",
+        "blog"
+    ],
+    "homepage": "https://github.com/ducorteam/blog",
+    "license": "The Unlicense",
+    "type": "plugin",
+    "authors": [
+        {
+            "name": "Ducor Team",
+            "email": "ducorteam@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "laravel/scout": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Plugins\\Blog\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Plugins\\Blog\\Providers\\BlogServiceProvider",
+                "Plugins\\Blog\\Providers\\RouteServiceProvider"
+            ]
+        }
+    }
+}

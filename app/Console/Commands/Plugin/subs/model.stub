@@ -1,0 +1,12 @@
+<?php
+
+namespace Plugins\{{$ucname}}\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use App\Support\Traits\UuidTrait;
+
+class {{$ucname}} extends Model
+{
+    use UuidTrait;
+
+}

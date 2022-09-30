@@ -1,0 +1,157 @@
+
+[data-theme-version="dark"] {
+    .dropdown-menu {
+        background-color: $dark-card;
+    }
+
+    .dropdown-item {
+        &:hover, &:focus {
+            background-color: $d-bg;
+            color: $white;
+        }
+    }
+
+    .form-control {
+        background-color: $d-bg;
+        border-color: $d-border;
+        color: $white;
+    }
+    
+    .card {
+        background-color: $dark-card;
+    }
+	.btn-outline-dark:hover{
+		background-color: $d-bg;
+		border-color: $d-bg;
+	}
+	.tdl-holder input[type=text],
+	.tdl-holder li{
+	    background-color: $dark-card;
+		border-color:$d-border;
+	}
+	.tdl-holder input[type=text]{
+		&::placeholder {
+			color: $d-ctl;
+		}
+	}
+    .tdl-holder label:hover {
+		background-color: $d-border;
+		color: $white;
+	}
+	.text-muted {
+		color: $d-ctl !important;
+	}
+	.modal-content{
+		background:$dark-card;
+	}
+	.modal-footer,
+	.modal-header{
+		border-color: $d-border;
+	}
+	.close{
+	    font-weight: 400;
+		color: $white;
+		text-shadow: none;
+		
+		&:hover{
+			color: $white;
+		}
+	}
+	.text-dark {
+		color: $d-ctl !important;
+	}
+	.btn-primary:hover,
+	.star-rating .product-review,
+	.new-arrival-content .item,
+	.table{
+		color: $white;
+	}
+	.custom-dropdown .dropdown-menu{
+		border-color: $d-border;
+	}
+	.widget-stat .media > span{
+	    background: $d-border;
+	    border-color: $d-border;
+		color:$white;
+	}
+	.plus-minus-input .custom-btn{
+		background: $d-bg;
+	    border-color: $d-border;
+	}
+	.dropdown-divider,
+	.size-filter ul li{
+		border-color: $d-border;
+	}
+	.custom-select{
+	    border-color: $d-border;
+		color: $d-ctl;
+		background:$d-bg;
+	}
+	.nav-tabs{
+		border-color: $d-border;
+	}
+	.mail-list .list-group-item.active i {
+		color: $white;
+	}
+	hr{
+		border-color: $d-border;
+	}
+	.pagination .page-item{
+	
+		.page-link{
+			border-color: $d-border;
+			color: $d-ctl;
+			background: rgba(255, 255, 255, 0);
+				
+			&:hover{
+				background: $primary;
+				border-color: $primary;
+				color:$white;
+			}
+		}
+		&.active .page-link{
+			background: $primary;
+			border-color: $primary;
+			color:$white;
+		}
+	}
+	.grid-col{
+		background:$dark-card;
+	}
+	
+	.noUi-target{
+		border-color:$d-border;
+		border-radius: 8px;
+		box-shadow: none;
+		
+		.noUi-connects{
+			background:$d-border;
+		}
+	}
+	.noUi-marker-large,
+	.noUi-marker{
+		background:$d-border;
+	}
+	.input-group-text{
+		background:$d-border;
+	}
+	.note-editor.note-frame{
+		border-color:$d-border;
+		.btn{
+			color:$white;
+		}
+		.note-editing-area .note-editable{
+			color:$white;
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

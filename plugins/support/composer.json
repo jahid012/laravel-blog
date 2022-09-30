@@ -1,0 +1,35 @@
+{
+    "name": "ducorteam/support",
+    "description": "wokoya theme support plugin",
+    "keywords": [
+        "ducorteam",
+        "Plugin",
+        "support"
+    ],
+    "homepage": "https://github.com/ducorteam/w-support",
+    "license": "The Unlicense",
+    "version": "0.0.1",
+    "type": "plugin",
+    "authors": [
+        {
+            "name": "Ducor Team",
+            "email": "ducorteam@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Wokoya\\Support\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wokoya\\Support\\ServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<?php
+
+return [
+    'site_title' => '',
+    'title_separate' => '',
+    'site_description' => '',
+    'seo_title' => '',
+    'seo_description' => '',
+    'seo_ogimage' => '',
+    'seo_ogimage' => '',
+    'site_address' => '',
+    'site_email' => '',
+    'site_copyright' => '',
+    'site_logo' => '',
+    'site_logo' => '',
+    'site_favicon' => '',
+    'site_favicon' => '',
+    'social_facebook' => '',
+    'social_twitter' => '',
+    'social_youtube' => '',
+    'page_home' => 'home2',
+    'page_blog' => 'home1',
+
+];

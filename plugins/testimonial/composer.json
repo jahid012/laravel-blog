@@ -1,0 +1,36 @@
+{
+    "name": "ducorteam/testimonial",
+    "description": "description of testimonial",
+    "keywords": [
+        "ducorteam",
+        "Plugin",
+        "testimonial"
+    ],
+    "homepage": "https://github.com/ducorteam/testimonial",
+    "license": "The Unlicense",
+    "version": "0.0.1",
+    "type": "plugin",
+    "authors": [
+        {
+            "name": "Ducor Team",
+            "email": "ducorteam@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Plugins\\Testimonial\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Plugins\\Testimonial\\Providers\\TestimonialServiceProvider",
+                "Plugins\\Testimonial\\Providers\\RouteServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "name": "ducorteam/price",
+    "description": "simple package",
+    "keywords": [
+        "ducorteam",
+        "Plugin",
+        "price"
+    ],
+    "homepage": "https://github.com/ducorteam/price",
+    "license": "The Unlicense",
+    "version": "0.0.1",
+    "type": "plugin",
+    "authors": [
+        {
+            "name": "Ducor Team",
+            "email": "ducorteam@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Plugins\\Price\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Plugins\\Price\\Providers\\PriceServiceProvider",
+                "Plugins\\Price\\Providers\\RouteServiceProvider"
+            ]
+        }
+    }
+}

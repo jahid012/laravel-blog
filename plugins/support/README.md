@@ -1,0 +1,1 @@
+#  wokoa theme support

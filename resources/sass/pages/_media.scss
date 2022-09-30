@@ -1,0 +1,192 @@
+//media-picker
+#post-slug-field{
+    .input-group{
+        width: auto !important;
+    }
+    .slug-edit{
+        display: none;
+    }
+
+    .slug-show{
+        button{
+            height: 25px;
+            padding: 2px 10px 0 10px;
+            margin: 0 15px 0 7px;
+        }
+    }
+}
+
+
+label{
+    &.required{
+        &::after{
+            color: red;
+            content: " * ";
+        }
+    }
+}
+
+.media-picker-repaid{
+    width: 200px;
+    height: 200px;
+    border-style: dashed;
+    cursor: pointer;
+
+    input {
+        display: none;
+    }
+
+    &::after{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f410";
+        font-size: 16px !important;
+        color: $danger;
+        z-index: 99999;
+        background-color: $white;
+        position: absolute;
+        margin-left: -1.5rem !important;
+        padding: 0 4px;
+        display: contents;
+    }
+    &:hover{
+        color: $danger;
+        opacity: 0.7;
+    }
+    img{
+        width: 190px;
+        height: 190px;
+        object-fit: cover;
+        padding: 5px;
+    }
+}
+
+.media-picker{
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+
+    input{
+        display: none;
+    }
+
+    &::before{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f03e";
+        font-size: 10rem;
+        border-style: dashed;
+        padding: 0 1rem;
+        cursor: pointer;
+        background-color: $white;
+        line-height: normal;
+    }
+}
+
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) {}`
+
+#du-media-files-sidebar{
+    overflow-y: auto;
+}
+
+#du-media-files-contents{
+    height: 60vh;
+    overflow-y: auto;
+
+    [media-path]{
+        position: relative;
+        display: inline-flex;
+        width: 160px !important;
+        height: 160px !important;
+        overflow: hidden;
+        padding: 3px;
+        margin: 2px auto;
+        border: 2px solid transparent;
+        text-align: center;
+
+        img{
+            object-fit: cover;
+        }
+        &.chosen{
+            border: 2px solid $primary;
+            &::before {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f058";
+                z-index: 9999;
+                position: absolute;
+                margin-right: 4px !important;
+                margin-top: 0px !important;
+                font-size: 20px !important;
+                color: $primary;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+
+#du-media-files-sidebar{
+    background-color: #f6f7f7;
+}
+
+#du-media-upload-tab{
+    .dropzone{
+        border-style: dashed;
+        height: 50vh !important;
+    }
+    .dz-message{
+        position: relative;
+        top: 12vh;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    #du-media-files-contents{
+        [media-path]{
+            max-width: calc(25% - 4px) !important;
+            max-height: 200px;
+            // background-color: red;
+        }
+    }
+ }
+@include media-breakpoint-up(md) {
+    #du-media-files-contents{
+        [media-path]{
+            max-width: calc(25% - 4px) !important;
+            max-height: 200px;
+            // background-color: gray;
+        }
+    }
+ }
+@include media-breakpoint-up(lg) {
+    #du-media-files-contents{
+        [media-path]{
+            max-width: calc(25% - 4px) !important;
+            max-height: 200px;
+            // background-color: green;
+        }
+    }
+ }
+@include media-breakpoint-up(xl) {
+    #du-media-files-contents{
+        [media-path]{
+            // max-width: calc(25% - 4px) !important;
+            // max-height: 200px;
+            // background-color: royalblue;
+        }
+    }
+ }
+@include media-breakpoint-up(xxl) {
+    #du-media-files-contents{
+        [media-path]{
+            // max-width: calc(25% - 4px) !important;
+            // max-height: 200px;
+            // background-color: black;
+        }
+    }
+ }
+

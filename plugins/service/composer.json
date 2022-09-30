@@ -1,0 +1,36 @@
+{
+    "name": "ducorteam/service",
+    "description": "simple service plugin",
+    "keywords": [
+        "ducorteam",
+        "Plugin",
+        "service"
+    ],
+    "homepage": "https://github.com/ducorteam/service",
+    "license": "The Unlicense",
+    "version": "0.0.1",
+    "type": "plugin",
+    "authors": [
+        {
+            "name": "Ducor Team",
+            "email": "ducorteam@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Plugins\\Service\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Plugins\\Service\\Providers\\ServiceServiceProvider",
+                "Plugins\\Service\\Providers\\RouteServiceProvider"
+            ]
+        }
+    }
+}

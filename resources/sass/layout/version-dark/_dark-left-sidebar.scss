@@ -1,0 +1,83 @@
+[data-theme-version="dark"] {
+    
+    .deznav {
+        background-color: $d-bg;
+    
+        .metismenu {
+    
+    
+            &>li {
+		
+                &>a {
+                    color: darken($color: $white, $amount: 30%);
+					svg polyline, 
+					svg polygon, 
+					svg rect, 
+					svg circle, 
+					svg line, 
+					svg ellipse, 
+					svg path{
+						stroke: $white;
+					}
+                }
+    
+                &:hover, 
+                &:focus, 
+                &.mm-active {
+    
+                    &>a {
+                        background-color: $dark-card;
+                        color: $white;
+    
+                        &::after {
+                            border-color: $white;
+                        }
+                    }
+                }
+    
+                &.mm-active {
+					background-color: $dark-card;
+                    ul {
+    
+                        ul {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+    
+            //one step dropdown
+            ul  {
+                background-color: $dark-card;
+				&:after{
+					background-color:$d-border;
+				}
+				
+                a {
+    
+                    &:hover,
+                    &:focus, 
+                    &.mm-active {
+                        color: $white;
+                    } 
+					&:before{
+						background-color: $dark-card;
+					}
+                }
+            }
+            
+            a {
+                color: darken($color: $white, $amount: 30%);
+            }
+    
+            .has-arrow {
+                &:after {
+                    border-color: $white;
+                }
+            }
+        }
+    }
+    
+    
+
+}

@@ -1,0 +1,169 @@
+.toast {
+    &-success {
+        background-color: $primary;
+    }
+
+    &-info {
+        background-color: $info;
+    }
+
+    &-warning {
+        background-color: $warning;
+    }
+
+    &-error {
+        background-color: $danger;
+    }
+}
+
+#toast-container {
+
+    z-index: 3;
+
+    &>div {
+        @at-root [direction="rtl"] & {
+            padding: 15px 50px 15px 15px;
+            background-position: calc(100% - 15px);
+            text-align: right;
+        }
+    }
+
+    .toast:nth-of-type(1n+5) {
+        display: none;
+    }
+
+    .bg-primary{
+        .toast-header{
+            background-color: $primary;
+            color: $light;
+        }
+        .toast-body{
+            background-color: $primary;
+            color: $light;
+        }
+        .btn-close{
+            color: $light;
+        }
+    }
+
+    .bg-secondary{
+        .toast-header{
+            background-color: $secondary;
+            color: $light;
+        }
+        .toast-body{
+            background-color: $secondary;
+            color: $light;
+        }
+        .btn-close{
+            color: $light;
+        }
+    }
+
+    .bg-success{
+        .toast-header{
+            background-color: $success;
+            color: $light;
+        }
+        .toast-body{
+            background-color: $success;
+            color: $light;
+        }
+        .btn-close{
+            background-color: $success;
+            color: $light;
+        }
+    }
+
+    .bg-danger{
+        .toast-header{
+            background-color: $danger;
+            color: $light;
+        }
+        .toast-body{
+            background-color: $danger;
+            color: $light;
+        }
+        .btn-close{
+            color: $light;
+        }
+    }
+
+    .bg-warning{
+        .toast-header{
+            background-color: $warning;
+            color: $dark;
+        }
+        .toast-body{
+            color: $dark;
+        }
+        .btn-close{
+            color: $dark;
+        }
+    }
+
+    .bg-info{
+        .toast-header{
+            background-color: $info;
+            color: $dark;
+        }
+        .toast-body{
+            color: $dark;
+        }
+        .btn-close{
+            color: $dark;
+        }
+    }
+
+    .bg-light{
+        .toast-header{
+            background-color: $light;
+            color: $dark;
+        }
+        .toast-body{
+            color: $dark;
+        }
+        .btn-close{
+            color: $dark;
+        }
+    }
+
+    .bg-dark{
+        .toast-header{
+            background-color: $dark;
+            color: $light;
+        }
+        .toast-body{
+            color: $light;
+        }
+        .btn-close{
+            color: $light;
+        }
+    }
+
+
+    // .toast-title {
+    //     margin-bottom: 5px;
+    //     font-weight: 600;
+    // }
+
+    // .toast-message {
+    //     font-size: 12px;
+    // }
+
+    // .toast-close-button {
+    //     opacity: 1;
+    //     font-size: 8px;
+    //     font-weight: normal;
+    //     text-shadow: none;
+    // }
+
+
+}
+
+[direction="rtl"] {
+    .toast-top-right.demo_rtl_class {
+        left: 12px;
+        right: auto;
+    }
+}
